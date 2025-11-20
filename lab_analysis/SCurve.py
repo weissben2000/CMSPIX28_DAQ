@@ -85,7 +85,7 @@ for iS in range(scurve.shape[0]):
     ax.text(0.05, 0.85, f"ROIC V{int(info['ChipVersion'])}, ID {int(info['ChipID'])}, SuperPixel {int(info['SuperPix'])}", transform=ax.transAxes, fontsize=12, color="black", ha='left', va='bottom')
 
     # save fig
-    outFileName = os.path.join(outDir, f"SCurve_ChipVersion{int(info['ChipVersion'])}_ChipID{int(info['ChipID'])}_SuperPixel{int(info['SuperPix'])}_Setting{iS}.pdf")
+    outFileName = os.path.join(outDir, f"SCurve_ChipVersion{int(info['ChipVersion'])}_ChipID{int(info['ChipID'])}_SuperPixel{int(info['SuperPix'])}_Setting{iS}.jpg")
     print(f"Saving file to {outFileName}")
     plt.savefig(outFileName, bbox_inches='tight')
     plt.close()
