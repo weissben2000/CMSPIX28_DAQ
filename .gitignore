@@ -1,8 +1,12 @@
 # file types
 *.pdf
 *.npz
+*.jou
+*.log
 *~
 
 # folders
 plots/
 __pycache__/
+peary/
+spacely/
